@@ -1,0 +1,70 @@
+@import url('../variables.css');
+
+/*-----------------------------------*\
+    #WHO ARE WE
+  \*-----------------------------------*/
+
+.team-section {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+}
+
+.team-card {
+    background-color: #f2f2f2;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    transition: 250ms;
+}
+
+.team-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-img {
+    width: 200px;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.team-name {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.team-title {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.card-separator {
+    width: 50%;
+    height: 1px;
+    background-color: #666;
+    margin: 20px auto;
+}
+
+.team-email-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.team-email-section ion-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.team-email {
+    font-size: 1.5rem;
+    color: #e10531;
+    text-decoration: none;
+}

@@ -1,0 +1,162 @@
+@import url('../variables.css');
+
+/*-----------------------------------*\
+    #FAQ
+  \*-----------------------------------*/
+
+#team img {
+    height: 150px;
+    width: 130px;
+    margin: auto;
+}
+
+#team {
+    text-align: center;
+}
+
+#team:hover {
+    color: none;
+}
+
+#team:hover a {
+    color: white;
+}
+
+#team #creative-manager {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#team #creative-manager a {
+
+    margin: 10px;
+    text-align: center;
+}
+
+#team ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#team li {
+    display: flex;
+    align-items: center;
+}
+
+.faq .container {
+    display: flex;
+    gap: 20px;
+}
+
+.faq .title-wrapper {
+    background-color: var(--white);
+    padding: 30px 25px;
+    box-shadow: var(--shadow-1);
+}
+
+.faq .section-title {
+    font-size: var(--fs-4);
+    margin-block-end: 30px;
+}
+
+.faq-card {
+    border-radius: var(--radius-5);
+    overflow: hidden;
+}
+
+.faq-card .card-action {
+    --action-bg: rgb(230, 221, 222);
+    --color: var(--granite-gray);
+
+    background-color: var(--action-bg);
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+    gap: 20px;
+    transition: var(--transition-1);
+}
+
+.faq-card .card-action:is(:hover, .active) {
+    --action-bg: var(--go-green);
+    --color: var(--white);
+}
+
+.faq-card .card-title {
+    color: rgb(0, 0, 0);
+    font-size: var(--fs-8);
+    transition: var(--transition-1);
+}
+
+.faq-card ion-icon {
+    color: var(--color);
+    font-size: 15px;
+    transition: var(--transition-1);
+    --ionicon-stroke-width: 60px;
+}
+
+.faq-card .card-action.active .open,
+.faq-card .card-action .close {
+    display: none;
+}
+
+.faq-card .card-action .open,
+.faq-card .card-action.active .close {
+    display: block;
+}
+
+.faq-card .card-content {
+    font-size: var(--fs-10);
+    padding-inline: 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition-2);
+}
+
+.faq-card .card-content p {
+    margin-block: 15px;
+}
+
+.faq-card .card-action.active+.card-content {
+    max-height: 500px;
+}
+
+@media screen and (max-width: 576px) {
+    .faq-card {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 575px) {
+    .faq-card {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .faq-card {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .faq .container {
+        grid-template-columns: 0.48fr 1fr;
+        align-items: flex-start;
+        display: flex;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .faq-card .card-action.active+.card-content {
+        max-height: 200px;
+    }
+}

@@ -1,0 +1,82 @@
+@import url('../variables.css');
+
+/*-----------------------------------*\
+    #ABOUT
+  \*-----------------------------------*/
+
+.about .container {
+    display: grid;
+    gap: 30px;
+}
+
+.about-banner {
+    filter: drop-shadow(2px 2px 5px hsla(0, 0%, 0%, 0.08));
+}
+
+.about .section-text {
+    margin-block: 20px 13px;
+}
+
+.about-content .section-text {
+    font-size: 1.7rem;
+    color: var(--rich-black-fogra-29-1);
+}
+
+.about-list {
+    margin-block-end: 20px;
+}
+
+.about-list .has-before {
+    font-family: var(--ff-cuprum);
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding-inline-start: 20px;
+    line-height: 1.5;
+    margin-left: 10px;
+}
+
+.about-list .has-before:not(:last-child) {
+    margin-block-end: 15px;
+}
+
+.about-list .has-before::before {
+    top: 10px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--go-green);
+}
+
+.about .btn-group {
+    justify-content: flex-start;
+}
+
+.about .btn-group .flex-btn {
+    gap: 10px;
+}
+
+.about .btn-icon ion-icon {
+    color: var(--go-green);
+    font-size: 40px;
+}
+
+.about .btn-group .span {
+    color: var(--go-green);
+    font-family: var(--ff-cuprum);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-600);
+}
+
+@media (min-width: 992px) {
+    .about .container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about .container {
+        grid-template-columns: 1fr 0.7fr;
+    }
+}

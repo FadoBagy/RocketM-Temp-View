@@ -1,0 +1,161 @@
+@import url('../variables.css');
+
+/*-----------------------------------*\
+    #FEATURES
+  \*-----------------------------------*/
+
+.features .section-text {
+    margin-block: 15px 50px;
+}
+
+.features-card {
+    position: relative;
+    background-color: var(--white);
+    padding: 25px;
+    padding-block-start: 40px;
+    margin-block-start: 24px;
+    box-shadow: var(--shadow-1);
+    transition: var(--transition-2);
+}
+
+.features-card:hover {
+    background-color: var(--go-green);
+}
+
+.features-card .card-number {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    background-color: var(--cultured);
+    font-size: var(--fs-7);
+    font-weight: var(--fw-600);
+    padding-block: 5px;
+    min-width: 50px;
+    text-align: center;
+    border-radius: var(--radius-5);
+    transition: var(--transition-1);
+}
+
+.features-card:hover .card-number {
+    color: var(--go-green);
+}
+
+.features-card .card-title {
+    font-size: 20px;
+    margin-block-end: 5px;
+}
+
+.features-card :is(.card-title, .card-text) {
+    transition: var(--transition-1);
+}
+
+.features-card:hover :is(.card-title, .card-text) {
+    color: var(--white);
+}
+
+.why-us {
+    position: relative;
+    background-color: #1a1a1a;
+}
+
+.why-us h2 {
+    color: #f2f2f2;
+}
+
+.why-us .section-text {
+    color: #d3d3d3;
+}
+
+.features .grid-list {
+    padding: 30px;
+}
+
+.features-card-info {
+    position: relative;
+    background-color: var(--white);
+    padding: 25px;
+    padding-block-start: 40px;
+    margin-block-start: 24px;
+    box-shadow: var(--shadow-1);
+    transition: var(--transition-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 175px;
+    border-radius: 5px;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f2;
+    cursor: default;
+}
+
+.features-card-info:hover {
+    background-color: var(--go-green);
+}
+
+.features-card-info .card-number {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    transform: translateY(-50%);
+    background-color: var(--cultured);
+    font-size: var(--fs-7);
+    font-weight: var(--fw-600);
+    padding-block: 5px;
+    min-width: 50px;
+    text-align: center;
+    border-radius: var(--radius-5);
+    border: 1px solid #e2e2e2;
+    transition: var(--transition-1);
+}
+
+.features-card-info:hover .card-number {
+    color: var(--go-green);
+}
+
+.features-card-info .card-title {
+    font-size: 20px;
+    margin-block-end: 5px;
+}
+
+.features-card-info :is(.card-title, .card-text) {
+    transition: var(--transition-1);
+}
+
+.features-card-info:hover :is(.card-title, .card-text) {
+    color: var(--white);
+}
+
+.features .section-text {
+    margin-bottom: 30px;
+}
+
+.astronaut-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.floating-element {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 130px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .features .grid-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .features .grid-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
