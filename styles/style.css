@@ -266,6 +266,20 @@ section {
     }
 }
 
+@media (max-width: 992px) {
+
+    .section.about,
+    .section.service,
+    .section.why-us,
+    .section.features {
+        padding: 40px 0 !important;
+    }
+
+    section {
+        scroll-margin-top: 100px;
+    }
+}
+
 @media (min-width: 575px) {
     .container {
         max-width: 540px;
@@ -302,17 +316,6 @@ section {
         margin-block-end: 0;
     }
 }
-
-@media (max-width: 992px) {
-
-    .section.about,
-    .section.service,
-    .section.why-us,
-    .section.features {
-        padding: 40px 0 !important;
-    }
-}
-
 
 @media (min-width: 1200px) {
     .container {
