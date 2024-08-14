@@ -4,6 +4,14 @@
     #WHO ARE WE
   \*-----------------------------------*/
 
+.team {
+    padding: 80px 10px;
+}
+
+.team .team-text {
+    padding: 10px;
+}
+
 .team-section {
     display: flex;
     justify-content: space-evenly;
@@ -67,4 +75,23 @@
     font-size: 1.5rem;
     color: #e10531;
     text-decoration: none;
+}
+
+@media (max-width: 400px) {
+    .team-section .team-card {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 780px) {
+    .team-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .team-section .team-card {
+        width: 80%;
+    }
 }

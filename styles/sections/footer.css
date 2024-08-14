@@ -159,6 +159,19 @@
     background-color: var(--rich-black-fogra-29-1);
 }
 
+@media (max-width: 350px) {
+    .footer .footer-brand img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 564px) {
+    .footer .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
 @media (min-width: 768px) {
     .footer-top .container {
         grid-template-columns: 1fr 1fr;

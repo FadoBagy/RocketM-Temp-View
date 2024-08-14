@@ -66,6 +66,7 @@ html {
 body {
     position: relative;
     z-index: 1;
+    overflow-x: hidden;
     background-color: var(--white);
     color: var(--granite-gray);
     font-size: 1.6rem;
@@ -301,6 +302,17 @@ section {
         margin-block-end: 0;
     }
 }
+
+@media (max-width: 992px) {
+
+    .section.about,
+    .section.service,
+    .section.why-us,
+    .section.features {
+        padding: 40px 0 !important;
+    }
+}
+
 
 @media (min-width: 1200px) {
     .container {

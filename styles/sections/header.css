@@ -110,6 +110,12 @@
     opacity: 1;
 }
 
+@media (max-width: 330px) {
+    .header .logo img {
+        width: 150px;
+    }
+}
+
 @media (min-width: 575px) {
     .header .container {
         max-width: unset;
